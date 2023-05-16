@@ -7,39 +7,93 @@
     <title>TeamOCA-SHOP</title>
   </head>
   <body background="./img/about.jpg">
-    <div class="white"></div>
-    <div class="container">
-      <div class="member"><img src="img\member\member_01.jpeg" alt="" /></div>
-      <div class="member"><img src="img\member\member_02.jpeg" alt="" /></div>
-      <div class="memver"><img src="img\member\member_03.jpeg" alt="" /></div>
-      <div class="member"><img src="img\member\member_04.jpeg" alt="" /></div>
-      <div class="member"><img src="img\member\member_05.jpeg" alt="" /></div>
-      <div class="memver"><img src="img\member\member_06.jpeg" alt="" /></div>
-      <div class="member"><img src="img\member\member_07.jpeg" alt="" /></div>
-      <div class="member"><img src="img\member\member_08.jpeg" alt="" /></div>
-      <div class="memver"><img src="img\member\member_09.jpeg" alt="" /></div>
-      <div class="member"><img src="img\member\member_10.jpeg" alt="" /></div>
+    <div class="white">
+      <div class="black">
+        <div class="member">
+          <img src="img\member\member_01.jpeg" alt="" />
+          <p>member1</p>
+        </div>
+      </div>
+      <div class="black">
+        <div class="member">
+          <img src="img\member\member_02.jpeg" alt="" />
+        </div>
+      </div>
+      <div class="black">
+        <div class="member"><img src="img\member\member_03.jpeg" alt="" /></div>
+      </div>
+      <div class="black">
+        <div class="member"><img src="img\member\member_04.jpeg" alt="" /></div>
+      </div>
+      <div class="black">
+        <div class="member"><img src="img\member\member_05.jpeg" alt="" /></div>
+      </div>
+      <div class="black">
+        <div class="member"><img src="img\member\member_06.jpeg" alt="" /></div>
+      </div>
+      <div class="black">
+        <div class="member"><img src="img\member\member_07.jpeg" alt="" /></div>
+      </div>
+      <div class="black">
+        <div class="member"><img src="img\member\member_08.jpeg" alt="" /></div>
+      </div>
+      <div class="black">
+        <div class="member"><img src="img\member\member_09.jpeg" alt="" /></div>
+      </div>
+      <div class="black">
+        <div class="member"><img src="img\member\member_10.jpeg" alt="" /></div>
+      </div>
     </div>
   </body>
   <style>
     .white {
-      border: solid 0px #000000;
+      border: solid 0px #fff000;
       margin: 0px;
       padding: 20px;
       width: 100%;
-      height: 50vh;
+      height: 50%;
+    }
+
+    .black {
+      border: solid 0px #ff0000;
+      margin: 20px 0px 50px;
+      padding: 50px 20px 50px;
+      width: 330px;
+      height: 220px;
+    }
+
+    .member {
+      margin: 0px;
+      padding: 0px;
+    }
+
+    .white {
+      display: flex;
+      justify-content: space-around;
+      flex-flow: row wrap;
+    }
+
+    .black {
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+    }
+
+    .member {
+      display: flex;
+      justify-content: center;
+    }
+
+    .black {
+      background-color: black;
     }
 
     .white {
       background-color: white;
     }
 
-    .member {
-      display: inline-flex;
-    }
-
-    .member {
-      background-color: black;
+    .black {
+      color: white;
     }
   </style>
 </html>
