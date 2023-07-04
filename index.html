@@ -12,7 +12,6 @@
 
 <body background="./img/about.jpg">
     <style>
-    
   </style>
     <div class="container">
         <!-- ヘッダー -->
@@ -28,14 +27,9 @@
         </header>
       <div class="teamoca"><p>&nbsp;TeamOCA</p></div>
       <div class="aaa">
-  &nbsp;aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa<br>
-  &nbsp;aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa<br>
-  &nbsp;aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa<br>
-  &nbsp;aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa<br>
-  &nbsp;aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa<br>
-  &nbsp;
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 </div>
-<div class="member_title"><h1>MEMBER</h1></div>
+<div class="member_title"><h1>&nbsp;MEMBER</h1></div>
 <div class="white">
       <div class="black">
         <div class="member">
@@ -171,9 +165,9 @@
     .white {
       border: solid 0px #fff000;
       margin: 0px;
-      padding: 0px 0px 0px 0px;
+      padding: 20px;
       width: 100%;
-      height: 50%;
+      height: 100%;
     }
 
     .white {
@@ -196,12 +190,14 @@
       align-items: flex-end;
       justify-content: center;
       color: white;
+      flex-wrap: wrap;
       background-color: black;
     }
 
     .member_title {
       border: solid 1px white;
-      padding: 5px 10px 5px 20px;
+      padding: 5px 0px 5px 40px;
+      width: 100%;
     }
 
     .member_title {
@@ -227,6 +223,8 @@
 
     .aaa {
       color: white;
+      width: 50%;
+       word-wrap: break-word;
     }
 
     .header_menu {
@@ -313,6 +311,174 @@
 
     .form-group label {
       display: block;
+    }
+
+
+    @media screen and (max-width: 480px) {
+	/* 480px以下に適用されるCSS（スマホ用） */
+     .header_logo {
+      border: solid 0px #fff000; 
+      margin: -14px -265px 0px 0px;
+      width: 160%;
+      height: 50%;
+    }
+    
+    .header_logo {
+      background-color: rgb(18, 31, 31);
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .white {
+      border: solid 0px #fff000;
+      margin: 0px;
+      padding: 20px;
+      width: 150%;
+      height: 100%;
+    }
+
+    .white {
+      display: flex;
+      justify-content: space-around;
+      flex-flow: row wrap;
+      background-color: white;
+    }
+
+    .black {
+      border: solid 0px #ff0000;
+      margin: 0px 0px 20px;
+      padding: 50px 50px 50px;
+      width: 225px;
+      height: 225px;
+    }
+
+    .black {
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      color: white;
+      flex-wrap: wrap;
+      background-color: black;
+    }
+
+    .member_title {
+      border: solid 3px white;
+      padding: 5px 20px 5px 0px;
+      width: 150%;
+    }
+
+    .member_title {
+      background-color: white;
+      color: lightgreen;
+    }
+
+    .member {
+      margin: -65px;
+      padding: 0px;
+      font-size: 25px;
+    }
+
+    .member {
+      text-align: center;
+    }
+
+    .teamoca {
+      margin: -25px 0px -25px 0px;
+      font-size: 25px;
+      color: lightgreen;
+    }
+
+    .aaa {
+      color: white;
+      width: 75%;
+       word-wrap: break-word;
+    }
+
+    .header_menu {
+      display: inline-flex ;
+      justify-content:space-between ;
+      color: lightgreen;
+      text-decoration: none;
+    }
+
+    .header_menu a {
+      text-decoration: none;
+    }
+
+    .black2 {
+      border: solid 0px #ff0000;
+      margin: 0px;
+      padding: 20px;
+      width: 150%;
+      height: 100%;
+    }
+
+    .black2 {
+      display: flex;
+      justify-content: space-around;
+      flex-flow: row wrap;
+      text-align: left;
+      background-color: black;
+    }
+
+    .game_title {
+      border: solid 0px #ff0000;
+      margin: 0px;
+      padding: 20px;
+      width: 150%;
+      height: 100%;
+    } 
+
+    .game_title {
+      background-color: black;
+      color: lightgreen;
+    }
+
+    .whitesmoke {
+      border: solid 0px #ff0000;
+      margin: 0px 50px 20px 50px;
+      padding: 50px 0px 50px 0px;
+      width: 350px;
+      height: 250px;
+    }
+
+    .whitesmoke {
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      background-color: whitesmoke;
+    }
+
+    .game {
+      margin: -50px;
+      padding: 0px;
+      font-size: 20px;
+    }
+
+    .game {
+      text-align: center;
+      color: black;
+    }
+
+    .lightpink {
+      border: solid 0px #000000;
+      margin: 0px;
+      padding: 20px;
+      width: 150%;
+      height: 50%;
+    }
+
+    .lightpink {
+      background-color: lightpink;
+    }
+
+    .contact {
+      color: lightgreen;
+    }
+
+    .form-group label {
+      display: block;
+    }
     }
 
     </style>
